@@ -4,7 +4,7 @@ import plotly.express as px
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r"C:\Users\Anton\Downloads\diabetes.csv")
+    df = pd.read_csv("diabetes.csv")
     df = df.rename(columns={"Diabetes_012": "Diabetes"})
     return df
 
